@@ -336,7 +336,7 @@ The pipeline's data quality, orchestration, and security were validated end-to-e
 │   ├── ecomm_pipeline_setup.sql
 │   └── verify_pipeline.sql
 │
-├── Screenshot/
+├── screenshot/
 │   ├── sf/
 │   │   └── (15 Snowflake validation screenshots)
 │   └── aws/
