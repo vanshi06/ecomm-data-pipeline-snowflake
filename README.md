@@ -266,64 +266,64 @@ The pipeline's data quality, orchestration, and security were validated end-to-e
 
 **Row counts across all layers** — proves data flows correctly through RAW → STAGING → CORE, with counts shrinking as invalid or duplicate rows are filtered out.
 
-![Row counts across all layers](Screenshot/sf/01_row_counts_all_layers.jpeg)
+![Row counts across all layers](Screenshots/sf/01_row_counts_all_layers.jpeg)
 
 **Rejected records summary** — shows the validation logic actually catching bad data.
 
-![Rejected records summary](Screenshot/sf/02_rejected_records_summary.jpeg)
+![Rejected records summary](Screenshots/sf/02_rejected_records_summary.jpeg)
 
 **Final reporting view** — the BI-ready `SALES_REPORT` view joining customers, products, and orders.
 
-![Sales report sample](Screenshot/sf/07_sales_report_sample.jpeg)
+![Sales report sample](Screenshots/sf/07_sales_report_sample.jpeg)
 
 ### Orchestration & Monitoring
 
 **Task chain execution** — all four tasks succeeding in sequence.
 
-![Task history filtered](Screenshot/sf/09_task_history_filtered.jpeg)
+![Task history filtered](Screenshots/sf/09_task_history_filtered.jpeg)
 
 **Pipeline execution log** — every run is self-logging and auditable.
 
-![Pipeline log](Screenshot/sf/08_pipeline_log.jpeg)
+![Pipeline log](Screenshots/sf/08_pipeline_log.jpeg)
 
 **Automated email alert** — the pipeline notifies a human on completion.
 
-![Pipeline email confirmation](Screenshot/sf/15_pipeline_email_confirmation.jpeg)
+![Pipeline email confirmation](Screenshots/sf/15_pipeline_email_confirmation.jpeg)
 
 ### Infrastructure: S3 & IAM
 
 **S3 bucket structure** — three folders, with three incremental order batch files.
 
-![S3 bucket root](Screenshot/aws/05_s3_bucket_root.jpeg)
+![S3 bucket root](Screenshots/aws/05_s3_bucket_root.jpeg)
 
 **Cross-account IAM trust** — scoped `sts:AssumeRole` policy, not an open trust relationship.
 
-![IAM trust relationship](Screenshot/aws/02_iam_trust_relationship.jpeg)
+![IAM trust relationship](Screenshots/aws/02_iam_trust_relationship.jpeg)
 
 <details>
 <summary><strong>Click to see additional validation screenshots</strong></summary>
 
 #### Snowflake — Data Layers
-![Rejected records sample](Screenshot/sf/03_rejected_records_sample.jpeg)
-![Dim customer sample](Screenshot/sf/04_dim_customer_sample.jpeg)
-![Dim product sample](Screenshot/sf/05_dim_product_sample.jpeg)
-![Fact order sample](Screenshot/sf/06_fact_order_sample.jpeg)
+![Rejected records sample](Screenshots/sf/03_rejected_records_sample.jpeg)
+![Dim customer sample](Screenshots/sf/04_dim_customer_sample.jpeg)
+![Dim product sample](Screenshots/sf/05_dim_product_sample.jpeg)
+![Fact order sample](Screenshots/sf/06_fact_order_sample.jpeg)
 
 #### Snowflake — Security, Ingestion & Alerting
-![BI role grants](Screenshot/sf/10_bi_role_grants.jpeg)
-![Snowpipe status](Screenshot/sf/11_snowpipe_status.jpeg)
-![Email task history](Screenshot/sf/12_email_task_history.jpeg)
-![Orders pipe live status](Screenshot/sf/13_orders_pipe_live_status.jpeg)
+![BI role grants](Screenshots/sf/10_bi_role_grants.jpeg)
+![Snowpipe status](Screenshots/sf/11_snowpipe_status.jpeg)
+![Email task history](Screenshots/sf/12_email_task_history.jpeg)
+![Orders pipe live status](Screenshots/sf/13_orders_pipe_live_status.jpeg)
 ![Storage integration details](Screenshot/sf/14_storage_integration_details.jpeg)
 
 #### AWS — IAM & S3
-![IAM role summary](Screenshot/aws/01_iam_role_summary.jpeg)
-![IAM role policy detail](Screenshot/aws/03_iam_role_policy_detail.jpeg)
-![IAM user summary](Screenshot/aws/04_iam_user_summary.jpeg)
-![S3 customers folder](Screenshot/aws/06_s3_customers_folder.jpeg)
-![S3 products folder](Screenshot/aws/07_s3_products_folder.jpeg)
-![S3 orders folder](Screenshot/aws/08_s3_orders_folder.jpeg)
-![S3 bucket properties](Screenshot/aws/09_s3_bucket_properties.jpeg)
+![IAM role summary](Screenshots/aws/01_iam_role_summary.jpeg)
+![IAM role policy detail](Screenshots/aws/03_iam_role_policy_detail.jpeg)
+![IAM user summary](Screenshots/aws/04_iam_user_summary.jpeg)
+![S3 customers folder](Screenshots/aws/06_s3_customers_folder.jpeg)
+![S3 products folder](Screenshots/aws/07_s3_products_folder.jpeg)
+![S3 orders folder](Screenshots/aws/08_s3_orders_folder.jpeg)
+![S3 bucket properties](Screenshots/aws/09_s3_bucket_properties.jpeg)
 
 </details>
 
